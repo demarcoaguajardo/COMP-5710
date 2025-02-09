@@ -34,3 +34,45 @@ class TestCalculator(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+''' 
+*** Output of Test Case Failures:
+
+"FFF
+======================================================================
+FAIL: test_divide (__main__.TestCalculator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test-calculator.py", line 23, in test_divide
+    self.assertEqual(calculator.divide(10, 2), 4)
+AssertionError: 5.0 != 4
+
+======================================================================
+FAIL: test_multiply (__main__.TestCalculator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test-calculator.py", line 12, in test_multiply
+    self.assertEqual(calculator.multiply(2, 3), 7)
+AssertionError: 6 != 7
+
+======================================================================
+FAIL: test_sqrt (__main__.TestCalculator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test-calculator.py", line 33, in test_sqrt
+    self.assertEqual(calculator.sqrt(4), 3)
+AssertionError: 2.0 != 3
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s"
+
+*** Output of Test Case Success (when failures are commented out):
+
+"...
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK"
+
+FAILED (failures=3)
+'''
