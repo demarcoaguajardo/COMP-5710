@@ -9,7 +9,7 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(calculator.multiply(0, -29), 0)
         self.assertEqual(calculator.multiply(100, 2), 200)
         # Example of test case failure
-        self.assertEqual(calculator.multiply(2, 3), 7)
+        #self.assertEqual(calculator.multiply(2, 3), 7)
 
     def test_divide(self):
         self.assertEqual(calculator.divide(10, 2), 5)
@@ -20,7 +20,7 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(ValueError):
             calculator.divide(5, 0)
         # Example of test case failure
-        self.assertEqual(calculator.divide(10, 2), 4)
+        #self.assertEqual(calculator.divide(10, 2), 4)
 
     def test_sqrt(self):
         self.assertEqual(calculator.sqrt(4), 2)
@@ -30,7 +30,7 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(ValueError):
             calculator.sqrt(-1)
         # Example of test case failure
-        self.assertEqual(calculator.sqrt(4), 3)
+        #self.assertEqual(calculator.sqrt(4), 3)
 
 if __name__ == '__main__':
     unittest.main()
