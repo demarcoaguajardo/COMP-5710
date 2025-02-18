@@ -1,0 +1,21 @@
+There were 44 security weaknesses that I discovered.
+
+These include:
+
+B101 - Use of assert detected (30 cases)
+B311 - Random blacklist (7 cases)
+B404 - Import_subprocess blacklist (1 case)
+B403 - Import_pickle blacklist (1 case)
+B301 - Pickle blacklist (1 case)
+B603 - Subprocess without shells equals true (2 cases)
+B607 - Start process with partial path (1 case)
+B110 - Try except pass (1 case)
+
+Therefore, the three most frequent security weaknesses were:
+
+1. B101 - Use of assert detected
+2. B311 - Random blacklist
+3. B603 - Subprocess without shells equals true
+
+
+
