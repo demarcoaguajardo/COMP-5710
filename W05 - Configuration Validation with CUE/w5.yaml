@@ -1,0 +1,13 @@
+#w5.yaml
+min: 5
+max: 10 # Change from 1 to 10 (max > min)
+---
+min: 10
+max: 15 # Change from 5 to 15 (max > min)
+---
+min: -1
+max: 10
+config1: 1 
+config2: 2
+config3: 11 # Changed from -30 to 11 (config3 >= max)
+config4: 1 # Changed from 10 to 1 (config4 < config2)

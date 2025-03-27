@@ -1,0 +1,36 @@
+When first running "cue vet w5.yaml check.cue", I got the ouptut:
+
+-   "max: invalid value 1 (out of bound >5):
+    ./check.cue:2:16
+    ./w5.yaml: 3:6"
+
+    -   This indicated that my first max value was less than the first
+        min value, so I changed it to 10 so that it would be > 5.
+
+When running the CUE command for the second time, I got the output:
+
+-   "max: invalid value 5 (out of bound >10):
+    ./check.cue:2:16
+    ./w5.yam1:6:6"
+
+    -   This indicated that the second max value was less than the second
+        min value, so I changed it to 15 so that it would be > 10.
+
+When running the CUE command for the third time, I got the output:
+
+-   "config3: invalid value -30 (out of bound >=10):
+        ./check. cue: 5:20
+        ./w5.yaml:12:10
+    config4: invalid value 10 (out of bound <2):
+        ./check.cue:6:20
+        ./w5.yam1:13:10"
+
+    -   This indicated that config3 was less than the third max, so
+        I changed config3 to 11 so that it would be >= 10.
+
+    -   It also indicated that config4 was greater than or equal to config2,
+        so I changed config4 to 1 so that it would be < 2. 
+
+When running the CUE command for the fourth time, I got no output, thus
+all the errors detected by CUE were no longer. 
+    
