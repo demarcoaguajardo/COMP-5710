@@ -28,9 +28,3 @@ that fuzzes an existing implementation of a simple calculator.
 - Open `w7.py` 
 - Implement the `simpleFuzzer` method so that it can generate alphanumeric values, and these values are plugged into the `simpleCalculator` method. Feel free to use the strings here: https://github.com/minimaxir/big-list-of-naughty-strings/blob/master/blns.json
 - Record the crash messages. You should be recording 10 errors as part of your implementation. Submit the screenshots.
-- Submit your code, i.e., the `w7.py` file and the error messages @ Workshop 7 on CANVAS. 
-- Due: Apr 20, 2025
-
-- ### Workshop 7 (Rubric) 
-- Branch and statement coverage for four test cases          = 20%
-- Screenshots of 10 crash messages and code implementation   = 80%
