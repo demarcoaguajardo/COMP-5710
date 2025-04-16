@@ -62,14 +62,6 @@ max?: number & >min  // must be strictly greater than min if defined.
 - For this part of the workshop you will use the `check.cue` file and report:
   - the violations reported by CUE for `w5.yaml`
   - fix the values within `w5.yaml` to get rid of the errors detected by CUE 
-- Submit your modified YAML file and a screenshot showcasing the output generates from the CUE tool on CANVAS @ `Workshop 5` 
-- Due: Mar 30, 2025
-
-#### Rubric 
-
-- YAML file : 50%
-- Screenshot: 40%
-- Analysis: 10%
 
 ### References
 - https://cuelang.org/docs/integrations/yaml/
